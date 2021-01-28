@@ -1,0 +1,4 @@
+
+	check by:
+		compare 
+		generate dataset/ images 

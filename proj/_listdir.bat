@@ -1,0 +1,2 @@
+python _listdirnames.py
+PAUSE

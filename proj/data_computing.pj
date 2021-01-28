@@ -1,0 +1,10 @@
+@=
+projectName="data_computing";
+projectType="application";
+projectGUID="8B788DED-8A65-47D4-8A3A-AA31AC904291";
+addProjectDirs=[CGV_DIR."/plugins", CGV_DIR."/libs", CGV_DIR."/3rd"];
+addProjectDeps=[
+"cgv_utils","cgv_type","cgv_data","cgv_base", 
+"cgv_signal", "cgv_reflect", "cgv_media", "cgv_os", 
+"cgv_math","cgv_gui", "cgv_render", "cmi_io", "cg_fltk", "crg_grid", "cg_ext", "cgv_gl"
+];
