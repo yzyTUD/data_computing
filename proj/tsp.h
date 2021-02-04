@@ -46,7 +46,7 @@ void Travel_Backtrack(int t){        //递归法
         }
     }
 }
-void tsp(){
+void main(){
     int i;
     City_Graph[1][1] = NO_PATH;
     City_Graph[1][2] = 30;
@@ -84,5 +84,4 @@ void tsp(){
         printf("%d ", bestx[i]);
     }
     printf("\n");
-    getchar();
 }

@@ -61,7 +61,7 @@ void MazeTrack(int x, int y)
     //如果该位置是出口，输出结果
     if (x == EXIT_X && y == EXIT_Y)
     {
-        cout << "找到一条道路" << endl;
+        cout << "path found:" << endl;
         paths++;
 
         //输出路径
@@ -133,23 +133,20 @@ int main(int argc, char* argv[])
         //显示迷宫
     for(int i=0;i<N;++i){
     for(int j=0;j<N;++j)
-    cout<<Maze[i][j]<<"  ";
-    cout<<endl;
+        cout<<Maze[i][j]<<"  ";
+        cout<<endl;
     }
 
     //回溯法走迷宫
     MazeTrack(ENTER_X, ENTER_Y);
 
     //显示最优的路径
-    cout << "可行路径总条数为" << paths << "；最优路径为" << endl;
+    cout << "all possible paths:" << paths << ", best route:" << endl;
     vector<Point>::iterator it;
     for (it = BestPath.begin(); it != BestPath.end(); ++it)
     {
         cout << "(" << it->x << "," << it->y << ") ";
     }
     cout << endl;
-
-
-    getchar();
     return 0;
 }
